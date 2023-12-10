@@ -3,29 +3,47 @@
 using namespace std;
 
 main() {
- int hghogh ;
+ int a , n , f ;
  cout<< " lotfan meghdar hoghogh khod ra be sorat chand millioni vared konid : " ;
- cin>> hghogh ;
+ cin>> a ;
  
- if ( hghogh < 6 ) {
- 	cout << " 0% az hoghogh shoma baraye maliat kasr mishavad!" ;
+ if ( a < 6000000 ) {
+ 	cout << " Hghogh shoma ba maliat : " << a ;
 }
- else if (hghogh>= 6 && hghogh < 8)	{
- 	cout<< "5% az hoghogh shoma baraye maliat kasr mishavad!" ;
+ else if ( a>= 6000000 && a < 8000000)	{
+  n=a*5;
+		f=n/100;
+		a=a-f;
+ 	cout<< " Hghogh shoma ba maliat : " << a  ;
  }
- else if (hghogh >= 8 && hghogh< 10) {
- 	cout<< " 10% az hoghogh shoma baraye maliat kasr mishavad!" ;
+ else if ( a >= 8000000 && a < 10000000) {
+  n=a*10;
+		f=n/100;
+		a=a-f;
+ 	cout<< " Hghogh shoma ba maliat : " << a ;
  }
- else if ( hghogh>= 10 && hghogh< 14 ) {
- 	cout<< " 15% az hoghogh shoma baraye maliat kasr mishavad!" ;
+ else if ( a >= 10000000 && a< 14000000 ) {
+  n=a*15;
+		f=n/100;
+		a=a-f;
+ 	cout<< " Hghogh shoma ba maliat : " << a ;
  }
- else if ( hghogh>= 14 && hghogh < 18) {
- 	cout << " 20% az hoghogh shoma baraye maliat kasr mishavad!" ;
+ else if ( a >= 14000000 && a < 18000000) {
+  n=a*20;
+		f=n/100;
+		a=a-f;
+ 	cout << " Hghogh shoma ba maliat : " << a ;
  }
- else if (hghogh>= 18 && hghogh < 25) {
- 	cout<< " 25% az hoghogh shoma baraye maliat kasr mishavad!" ;
+ else if (a >= 18000000 && a < 25000000) {
+  n=a*25;
+		f=n/100;
+		a=a-f;
+ 	cout<< " Hghogh shoma ba maliat : " << a ;
  }
- else { 
- cout<< "35% az hoghogh shoma baraye maliat kasr mishavad!" ;
+ else if (25000000 <= a ){ 
+  n=a*35;
+		f=n/100;
+		a=a-f ;
+ cout<< " Hghogh shoma ba maliat : " << a ;
  }
 }
